@@ -23,7 +23,7 @@ func main() {
 		Login:      "krasnovkd21",
 		Password:   "yes",
 		Database:   "petProjectDB",
-		MasterHost: "db",
+		MasterHost: "localhost:5000",
 	}
 
 	client, err := repository.NewClient(ctx, cfg.MasterHost, cfg)
